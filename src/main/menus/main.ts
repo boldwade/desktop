@@ -4,7 +4,6 @@ import { viewSource, saveAs, printPage } from './common-actions';
 import { WEBUI_BASE_URL, WEBUI_URL_SUFFIX } from '~/constants/files';
 import { AppWindow } from '../windows';
 import { Application } from '../application';
-import { showMenuDialog } from '../dialogs/menu';
 
 const isMac = process.platform === 'darwin';
 

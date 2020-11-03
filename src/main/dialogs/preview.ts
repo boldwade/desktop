@@ -1,6 +1,5 @@
 import { BrowserWindow } from 'electron';
 import { Application } from '../application';
-import { DIALOG_MARGIN_TOP, DIALOG_MARGIN } from '~/constants/design';
 import { PersistentDialog } from './dialog';
 
 const HEIGHT = 256;

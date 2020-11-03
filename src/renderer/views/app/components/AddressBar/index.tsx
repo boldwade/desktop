@@ -129,6 +129,7 @@ export const AddressBar = observer(() => {
       focus={store.addressbarFocused}
     >
       <ToolbarButton
+        autoInvert={false}
         toggled={false}
         icon={ICON_SEARCH}
         size={16}

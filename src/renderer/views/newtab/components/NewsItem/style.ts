@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { centerIcon, overline, maxLines, shadows } from '~/renderer/mixins';
+import { centerIcon, overline, maxLines} from '~/renderer/mixins';
 
 export const Img = styled.div`
   transition: 0.5s opacity;

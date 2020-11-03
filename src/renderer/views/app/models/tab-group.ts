@@ -47,6 +47,7 @@ export class ITabGroup {
 
   @action
   public setLeft(left: number, animation: boolean) {
+    console.log('tabGroup:setLeft', left, animation);
     animateTab('translateX', left, this.ref.current, animation);
     this.left = left;
   }

@@ -63,7 +63,9 @@ export const ToolbarButton = observer(
     id,
   }: Props) => {
     style = { ...style };
-
+    if (icon === '9c258d3e0ad9c4302b2c9bfc467bcdb8.svg') {
+      console.log('toolbarButton', id, icon, iconStyle, badgeTextColor, style, dense, autoInvert);
+    }
     return (
       <Button
         id={id}
@@ -124,7 +126,7 @@ export const ToolbarButton = observer(
   opacity: transparency.icons.active,
   autoInvert: true,
   badgeBackground: BLUE_500,
-  badgeTextColor: 'white',
+  badgeTextColor: 'red',
   badgeTop: 4,
   badgeRight: 4,
 };

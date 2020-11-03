@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { transparency, BLUE_300, BLUE_500 } from '~/renderer/constants';
+import { transparency, BLUE_300} from '~/renderer/constants';
 import { ITheme } from '~/interfaces';
-import { body2, centerIcon } from '~/renderer/mixins';
+import { centerIcon } from '~/renderer/mixins';
 
 export const StyledSuggestion = styled.div`
   width: 100%;

@@ -120,12 +120,12 @@ export const StyledTitle = styled.div`
   text-overflow: ellipsis;
   white-space: nowrap;
   transition: 0.2s margin-left;
-  margin-left: 8px;
+  margin-left: 4px;
   min-width: 0;
   flex: 1;
+  text-align: center;
 
   ${({ isIcon, selected, theme }: TitleProps) => css`
-    margin-left: ${!isIcon ? 0 : 12}px;
     color: ${selected
       ? theme['tab.selected.textColor']
       : theme['tab.textColor']};
@@ -133,8 +133,8 @@ export const StyledTitle = styled.div`
 `;
 
 export const StyledIcon = styled.div`
-  height: 16px;
-  min-width: 16px;
+  height: 14px;
+  min-width: 14px;
   transition: 0.2s opacity, 0.2s min-width;
   ${centerIcon()};
   ${({ isIconSet }: { isIconSet: boolean }) => css`
@@ -148,7 +148,7 @@ export const StyledContent = styled.div`
   z-index: 2;
   align-items: center;
   display: flex;
-  margin-left: 10px;
+  margin-left: 5px;
   flex: 1;
 `;
 
@@ -174,10 +174,10 @@ export const TabContainer = styled.div`
   ${({ pinned, theme, hasTabGroup, selected }: TabContainerProps) => css`
     max-width: ${pinned ? `${TAB_PINNED_WIDTH}px` : '100%'};
     margin-top: ${theme.tabMarginTop}px;
-    height: ${theme.tabHeight}px;
+    height: 100%;
     border-radius: ${theme.isCompact && !hasTabGroup ? '4px' : 'auto'};
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: ${theme.isCompact && !hasTabGroup ? '4px' : 'auto'};
+    border-top-right-radius: ${theme.isCompact && !hasTabGroup ? '4px' : 'auto'};
     box-shadow: ${selected ? '0px 0px 6px 0px rgba(0,0,0,0.12)' : 'none'};
   `};
 `;

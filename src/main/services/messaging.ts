@@ -11,7 +11,6 @@ import { SearchDialog } from '../dialogs/search';
 
 import * as bookmarkMenu from '../menus/bookmarks';
 import { showFindDialog } from '../dialogs/find';
-import { getFormFillMenuItems } from '../utils';
 import { showAddBookmarkDialog } from '../dialogs/add-bookmark';
 import { showExtensionDialog } from '../dialogs/extension-popup';
 import { showDownloadsDialog } from '../dialogs/downloads';

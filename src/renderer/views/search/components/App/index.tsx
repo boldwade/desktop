@@ -12,7 +12,6 @@ import { ICON_SEARCH, ICON_PAGE } from '~/renderer/constants';
 import { UIStyle } from '~/renderer/mixins/default-styles';
 import {
   COMPACT_TITLEBAR_HEIGHT,
-  DEFAULT_TITLEBAR_HEIGHT,
   TOOLBAR_HEIGHT,
 } from '~/constants/design';
 

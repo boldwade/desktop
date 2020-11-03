@@ -9,8 +9,6 @@ import { WindowsControls } from 'react-windows-controls';
 import { StyledTitlebar, FullscreenExitButton } from './style';
 import { NavigationButtons } from '../NavigationButtons';
 import { RightButtons } from '../RightButtons';
-import { Separator } from '../RightButtons/style';
-import { SiteButtons } from '../SiteButtons';
 
 const onCloseClick = () => ipcRenderer.send(`window-close-${store.windowId}`);
 

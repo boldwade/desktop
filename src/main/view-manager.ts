@@ -1,5 +1,4 @@
 import { ipcMain } from 'electron';
-import { VIEW_Y_OFFSET } from '~/constants/design';
 import { View } from './view';
 import { AppWindow } from './windows';
 import { WEBUI_BASE_URL } from '~/constants/files';

@@ -10,6 +10,8 @@ export interface ITheme {
   'toolbar.separator.color': string;
 
   'tab.textColor': string;
+  'tab.active.backgroundColor': string;
+  'tab.inactive.backgroundColor': string;
   'tab.selected.textColor': string;
 
   'control.backgroundColor': string;

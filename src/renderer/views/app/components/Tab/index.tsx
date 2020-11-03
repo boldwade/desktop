@@ -280,7 +280,7 @@ const Close = observer(({ tab }: { tab: ITab }) => {
 export default observer(({ tab }: { tab: ITab }) => {
   const defaultColor = store.theme['toolbar.lightForeground']
     ? 'rgba(255, 255, 255, 0.04)'
-    : 'rgba(255, 255, 255, 0.3)';
+    : store.theme['tab.inactive.backgroundColor']; // 'rgba(255, 255, 255, 0.3)';
 
   const defaultHoverColor = store.theme['toolbar.lightForeground']
     ? 'rgba(255, 255, 255, 0.08)'
@@ -309,7 +309,7 @@ export default observer(({ tab }: { tab: ITab }) => {
           backgroundColor: tab.isSelected
             ? store.isCompact && tab.isHovered
               ? defaultSelectedHoverColor
-              : store.theme['toolbar.backgroundColor']
+              : store.theme['tab.active.backgroundColor']
             : tab.isHovered
             ? defaultHoverColor
             : defaultColor,

@@ -1,5 +1,4 @@
 import { observable, computed } from 'mobx';
-import * as React from 'react';
 
 import { TabsStore } from './tabs';
 import { TabGroupsStore } from './tab-groups';

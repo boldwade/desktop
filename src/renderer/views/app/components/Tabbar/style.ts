@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { platform } from 'os';
 
 import { ToolbarButton } from '../ToolbarButton';
 import {
@@ -17,7 +16,6 @@ export const StyledTabbar = styled.div`
   align-items: center;
   margin-right: 32px;
   display: flex;
-  margin-left: 4px;
 `;
 
 /* &:hover {

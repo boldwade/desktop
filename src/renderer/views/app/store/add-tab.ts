@@ -1,5 +1,3 @@
-import store from '.';
-import { observable } from 'mobx';
 import { animateTab } from '../utils/tabs';
 
 export class AddTabStore {
@@ -8,7 +6,9 @@ export class AddTabStore {
   public ref: HTMLDivElement;
 
   public setLeft(left: number, animation: boolean) {
+    console.log('addTab:setLeft', left, animation);
     animateTab('translateX', left, this.ref, animation);
+    console.log('setLeft', left, animation);
     this.left = left;
   }
 }

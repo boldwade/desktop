@@ -8,8 +8,12 @@ import {
   ICON_CLOSE,
   ICON_FORWARD,
   ICON_BACK,
-  ICON_REFRESH,
+  ICON_REFRESH, ICON_MENU, ICON_ARROW_LEFT_CLOSED, ICON_ARROW_RIGHT_CLOSED
 } from '~/renderer/constants/icons';
+
+const onMenuClick = () => {
+  window.alert('TODO');
+};
 
 const onBackClick = () => {
   store.tabs.selectedTab.callViewMethod('goBack');
@@ -39,16 +43,22 @@ export const NavigationButtons = observer(() => {
   return (
     <StyledContainer>
       <ToolbarButton
+        size={20}
+        icon={ICON_MENU}
+        style={{ marginLeft: 6 }}
+        onClick={onMenuClick}
+      />
+      <ToolbarButton
         disabled={!store.navigationState.canGoBack}
         size={20}
-        icon={ICON_BACK}
+        icon={ICON_ARROW_LEFT_CLOSED}
         style={{ marginLeft: 6 }}
         onClick={onBackClick}
       />
       <ToolbarButton
         disabled={!store.navigationState.canGoForward}
         size={20}
-        icon={ICON_FORWARD}
+        icon={ICON_ARROW_RIGHT_CLOSED}
         onClick={onForwardClick}
       />
       <ToolbarButton

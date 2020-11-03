@@ -1,11 +1,10 @@
 import { AppWindow } from '../windows';
 import {
   clipboard,
-  nativeImage,
   Menu,
-  session,
-  ipcMain,
-  BrowserView,
+  
+  
+  
 } from 'electron';
 import { isURL, prefixHttp } from '~/utils';
 import { saveAs, viewSource, printPage } from './common-actions';

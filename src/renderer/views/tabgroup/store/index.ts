@@ -1,4 +1,3 @@
-import { ipcRenderer } from 'electron';
 import * as React from 'react';
 import { Textfield } from '~/renderer/components/Textfield';
 import { DialogStore } from '~/models/dialog-store';

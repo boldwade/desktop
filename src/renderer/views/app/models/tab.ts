@@ -226,6 +226,7 @@ export class ITab {
 
   @action
   public setLeft(left: number, animation: boolean) {
+    console.log('tab:setLeft', left, animation);
     animateTab('translateX', left, this.ref.current, animation);
     this.left = left;
   }

@@ -12,7 +12,6 @@ import {
 } from './style';
 import { ISuggestion } from '~/interfaces';
 import store from '../../store';
-import { ipcRenderer } from 'electron';
 import { callViewMethod } from '~/utils/view';
 
 interface Props {

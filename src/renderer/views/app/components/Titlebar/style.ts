@@ -36,7 +36,7 @@ export const StyledTitlebar = styled.div`
     background-color: ${theme['titlebar.backgroundColor']};
     height: ${theme.titlebarHeight}px;
     align-items: ${theme.isCompact ? 'center' : 'initial'};
-    padding-left: ${platform() === 'darwin' && !isFullscreen ? 78 : 4}px;
+    padding-left: ${platform() === 'darwin' && !isFullscreen ? 78 : 0}px;
 
     &:before {
       -webkit-app-region: ${isFullscreen ? 'no-drag' : 'drag'};
